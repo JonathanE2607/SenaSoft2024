@@ -15,14 +15,14 @@ public class PeopleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_people")
-    private Long idPeople;
+    private Long id_People;
 
 
     @Column(name = "name")
     private String name;
 
     @Column(name = "last_name")
-    private String lastName;
+    private String last_Name;
 
     @Column(name = "document")
     private Long document;

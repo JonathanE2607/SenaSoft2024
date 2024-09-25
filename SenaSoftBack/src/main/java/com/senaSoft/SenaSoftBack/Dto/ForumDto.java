@@ -7,11 +7,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class PeopleDto {
+public class ForumDto {
 
-    private Long id_people;
-    private String name;
-    private String lastname;
-    private Long document;
-
+    private Long id_Forum;
+    private Long document_User;
+    private String details;
+    private Long post_Id;
 }

@@ -46,8 +46,9 @@ public class PeopleBusiness {
     public void update (Long id, PeopleDto peopleDto){
         try{
             PeopleEntity peopleEntity = peopleService.getById(id);
+            peopleEntity.setId_People(peopleDto.getId_people());
             peopleEntity.setName(peopleDto.getName());
-            peopleEntity.setLastName(peopleDto.getLastname());
+            peopleEntity.setLast_Name(peopleDto.getLastname());
             peopleEntity.setDocument(peopleDto.getDocument());
 
             peopleService.update(peopleEntity);

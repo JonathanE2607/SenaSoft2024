@@ -7,11 +7,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class PeopleDto {
-
-    private Long id_people;
-    private String name;
-    private String lastname;
-    private Long document;
-
+public class ChallengeDto {
+    private int id_Challenge;
+    private String name_Challenge;
+    private String description;
+    private String forum_Challengues;
 }

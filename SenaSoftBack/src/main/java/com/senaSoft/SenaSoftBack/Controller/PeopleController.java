@@ -26,7 +26,7 @@ public class PeopleController {
         }
 
         @PutMapping("/update/{id}")
-        public void updatePeople(Long id,@RequestBody PeopleDto people){
+        public void updatePeople(Long id, @RequestBody PeopleDto people){
             peopleBusiness.update(id, people);
         }
 
